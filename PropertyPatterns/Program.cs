@@ -11,23 +11,35 @@ namespace PropertyPatterns
 
     class Program
     {
-        public static decimal SalesTax(Address address) =>
+        //public static int GetPostalCode(Address address)
+        //{
+        //    var city = address.City;
+        //    switch (city)
+        //    {
+        //        case "Ha Noi": return 100000;
+        //        case "Da Nang": return 550000;
+        //        case "Ho Chi Minh": return 700000;
+        //        default: return 0;
+        //    }
+        //}
+
+        public static int GetPostalCode(Address address) =>
         address switch
         {
-            { City: "Ha Noi" } => 2,
-            { City: "Da Nang" } => 5,
-            { City: "Ho Chi Minh" } => 7,
+            { City: "Ha Noi" } => 100000,
+            { City: "Da Nang" } => 550000,
+            { City: "Ho Chi Minh" } => 700000,
             _ => 0
         };
+
         static void Main(string[] args)
         {
             Address address = new Address();
-            address.City = "Hue";
-            var salesTax = SalesTax(address);
-            Console.WriteLine(salesTax);
+            address.City = "Da Nang";
+            var postalCode = GetPostalCode(address);
+            Console.WriteLine(postalCode);
 
             Console.ReadLine();
-
         }
     }
 }

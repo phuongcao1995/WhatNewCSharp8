@@ -15,7 +15,7 @@ namespace ReadonlyMembers
 
         public readonly override string ToString()
         {
-            return $"(Total area: {Area}";
+            return $"Total area: {Area}";
         }
     }
 
