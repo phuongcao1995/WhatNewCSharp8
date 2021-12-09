@@ -6,14 +6,14 @@ namespace ReadonlyMembers
     {
         public double Height { get; set; }
         public double Width { get; set; }
-        public readonly double Area => (Height * Width);
+        public double Area => (Height * Width);
 
-        public void setHeight(int height)
-        {
-            Height = height;
-        }
+        //public void setHeight(int height)
+        //{
+        //    Height = height;
+        //}
 
-        public  override readonly string ToString()
+        public override string ToString()
         {
             return $"Total area: {Area}";
         }
