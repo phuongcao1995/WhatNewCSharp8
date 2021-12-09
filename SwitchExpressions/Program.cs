@@ -31,36 +31,36 @@ namespace SwitchExpressions
         //    _ => throw new NotImplementedException(),
         //};
 
-        //public static string SetPlan(DayOfWeek daysOfWeek)
-        //{
-        //    switch (daysOfWeek)
-        //    {
-        //        case DayOfWeek.Monday:
-        //        case DayOfWeek.Tuesday:
-        //        case DayOfWeek.Wednesday:
-        //        case DayOfWeek.Thursday:
-        //        case DayOfWeek.Friday: return "Work";
-        //        case DayOfWeek.Saturday:
-        //        case DayOfWeek.Sunday: return "Relax";
-        //        default: throw new NotImplementedException();
-        //    }
-        //}
-
-        public static string SetPlan(DayOfWeek daysOfWeek) => daysOfWeek switch
+        public static string SetPlan(DayOfWeek daysOfWeek)
         {
-            var x when
-                  x == DayOfWeek.Monday
-               || x == DayOfWeek.Tuesday
-               || x == DayOfWeek.Wednesday
-               || x == DayOfWeek.Thursday
-               || x == DayOfWeek.Friday
-                => "Work",
-            var x when
-                  x == DayOfWeek.Saturday
-               || x == DayOfWeek.Sunday
-               => "Relax",
-            _ => throw new NotImplementedException(),
-        };
+            switch (daysOfWeek)
+            {
+                case DayOfWeek.Monday:
+                case DayOfWeek.Tuesday:
+                case DayOfWeek.Wednesday:
+                case DayOfWeek.Thursday:
+                case DayOfWeek.Friday: return "Work";
+                case DayOfWeek.Saturday:
+                case DayOfWeek.Sunday: return "Relax";
+                default: throw new NotImplementedException();
+            }
+        }
+
+        //public static string SetPlan(DayOfWeek daysOfWeek) => daysOfWeek switch
+        //{
+        //    var x when
+        //          x == DayOfWeek.Monday
+        //       || x == DayOfWeek.Tuesday
+        //       || x == DayOfWeek.Wednesday
+        //       || x == DayOfWeek.Thursday
+        //       || x == DayOfWeek.Friday
+        //        => "Work",
+        //    var x when
+        //          x == DayOfWeek.Saturday
+        //       || x == DayOfWeek.Sunday
+        //       => "Relax",
+        //    _ => throw new NotImplementedException(),
+        //};
 
         class Program
         {
