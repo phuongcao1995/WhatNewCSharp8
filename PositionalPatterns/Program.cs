@@ -24,8 +24,8 @@ namespace PositionalPatterns
             Console.WriteLine(a);
             Console.WriteLine(b);
 
-            var quadrant = GetQuadrant(point);
-            Console.WriteLine(quadrant);
+            //var quadrant = GetQuadrant(point);
+            //Console.WriteLine(quadrant);
             Console.ReadLine();
 
 
