@@ -6,7 +6,7 @@ namespace ReadonlyMembers
     {
         public double Height { get; set; }
         public double Width { get; set; }
-        public readonly double Area => (Height * Width);
+        public double Area => (Height * Width);
 
         //public void setHeight(int height)
         //{
