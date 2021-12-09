@@ -13,7 +13,7 @@ namespace ReadonlyMembers
         //    Height = height;
         //}
 
-        public readonly override string ToString()
+        public override string ToString()
         {
             return $"Total area: {Area}";
         }
