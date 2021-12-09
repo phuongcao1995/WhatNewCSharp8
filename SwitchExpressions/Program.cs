@@ -4,32 +4,32 @@ namespace SwitchExpressions
 {
     public class Plan
     {
-        //public static string Breakfast(DayOfWeek daysOfWeek)
-        //{
-        //    switch (daysOfWeek)
-        //    {
-        //        case DayOfWeek.Monday: return "An Com";
-        //        case DayOfWeek.Tuesday: return "An Pho";
-        //        case DayOfWeek.Wednesday: return "An Hu Tieu";
-        //        case DayOfWeek.Thursday: return "An Bun";
-        //        case DayOfWeek.Friday: return "An Chao";
-        //        case DayOfWeek.Saturday: return "An Mi";
-        //        case DayOfWeek.Sunday: return "An Hanh";
-        //        default: throw new NotImplementedException();
-        //    }
-        //}
-
-        public static string Breakfast(DayOfWeek daysOfWeek) => daysOfWeek switch
+        public static string Breakfast(DayOfWeek daysOfWeek)
         {
-            DayOfWeek.Monday => "An Com",
-            DayOfWeek.Tuesday => "An Pho",
-            DayOfWeek.Wednesday => "An Hu Tieu",
-            DayOfWeek.Thursday => "An Bun",
-            DayOfWeek.Friday => "An Chao",
-            DayOfWeek.Saturday => "An Mi",
-            DayOfWeek.Sunday => "An Hanh",
-            _ => throw new NotImplementedException(),
-        };
+            switch (daysOfWeek)
+            {
+                case DayOfWeek.Monday: return "An Com";
+                case DayOfWeek.Tuesday: return "An Pho";
+                case DayOfWeek.Wednesday: return "An Hu Tieu";
+                case DayOfWeek.Thursday: return "An Bun";
+                case DayOfWeek.Friday: return "An Chao";
+                case DayOfWeek.Saturday: return "An Mi";
+                case DayOfWeek.Sunday: return "An Hanh";
+                default: throw new NotImplementedException();
+            }
+        }
+
+        //public static string Breakfast(DayOfWeek daysOfWeek) => daysOfWeek switch
+        //{
+        //    DayOfWeek.Monday => "An Com",
+        //    DayOfWeek.Tuesday => "An Pho",
+        //    DayOfWeek.Wednesday => "An Hu Tieu",
+        //    DayOfWeek.Thursday => "An Bun",
+        //    DayOfWeek.Friday => "An Chao",
+        //    DayOfWeek.Saturday => "An Mi",
+        //    DayOfWeek.Sunday => "An Hanh",
+        //    _ => throw new NotImplementedException(),
+        //};
 
         //public static string SetPlan(DayOfWeek daysOfWeek)
         //{

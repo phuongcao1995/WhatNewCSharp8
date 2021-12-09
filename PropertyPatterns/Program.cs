@@ -11,26 +11,26 @@ namespace PropertyPatterns
 
     class Program
     {
-        //public static int GetPostalCode(Address address)
-        //{
-        //    var city = address.City;
-        //    switch (city)
-        //    {
-        //        case "Ha Noi": return 100000;
-        //        case "Da Nang": return 550000;
-        //        case "Ho Chi Minh": return 700000;
-        //        default: return 0;
-        //    }
-        //}
-
-        public static int GetPostalCode(Address address) =>
-        address switch
+        public static int GetPostalCode(Address address)
         {
-            { City: "Ha Noi" } => 100000,
-            { City: "Da Nang" } => 550000,
-            { City: "Ho Chi Minh" } => 700000,
-            _ => 0
-        };
+            var city = address.City;
+            switch (city)
+            {
+                case "Ha Noi": return 100000;
+                case "Da Nang": return 550000;
+                case "Ho Chi Minh": return 700000;
+                default: return 0;
+            }
+        }
+
+        //public static int GetPostalCode(Address address) =>
+        //address switch
+        //{
+        //    { City: "Ha Noi" } => 100000,
+        //    { City: "Da Nang" } => 550000,
+        //    { City: "Ho Chi Minh" } => 700000,
+        //    _ => 0
+        //};
 
         static void Main(string[] args)
         {
